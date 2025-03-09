@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design in Action</title>
+  <link rel="stylesheet" href="client/style.css">
+</head>
+<body>
+  <div id="app" class="container">
+
+    <div class="column left">
+      <h1>Design in Action</h1>
+      <textarea id="prompt" rows="4" placeholder="Enter your description..."></textarea>
+      <button id="generate">Generate Models</button>
+      <div id="parameters-output"></div> 
+      
+    </div>
+
+    <div class="column right">
+      <div id="canvas-container"></div>
+    </div>
+  </div>
+
+  <div id="parameter-display"></div>
+
+  <script type="module" src="client/script.js"></script>
+  <script src="https://unpkg.com/compromise"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    const API_BASE_URL = "http://localhost:3000"; // Backend base path
+  </script>
+  
+
+</body>
+</html>
